@@ -1,23 +1,14 @@
 #ESP32
-
-<h2>ESP-01</h2>
-<ol>
-<li> <a href="https://esp8266.ru/esplorer/">ESPlorer</a></li>
-<li> <a href="http://www.elec-za.com/arduino-ide-program-esp8266/">เขียนโปรแกรมควบคุม ESP8266 ด้วย Arduino IDE</a></li>
-<li> <a href="https://www.hackster.io/esp/products/esp8266-esp-01">Link รวมโครงงาน ESP-01ของ Everesting ESP</a></li>
-<li> <a href="http://randomnerdtutorials.com/how-to-make-two-esp8266-talk/">How to Make Two ESP8266 Talk</a></li>
-</ol>
-
-<bold> สำหรับ Spec ของ ESP-WROOM32 ซึ่งเป็นตัวที่ใช้กันในปัจจุบัน มี Spec ดังนี้ </bold>
+<h4> สำหรับ Spec ของ ESP-WROOM32 ซึ่งเป็นตัวที่ใช้กันในปัจจุบัน มี Spec ดังนี้ </h4>
 
 <ol>
-<li>- หน่วยประมวลผล Dual Core Tensilica LX6 ความเร็วสูงสุด 240MHz</li>
-<li>- RAM ภายใน 520KB</li>
-<li>- WiFi transceiver B/G/N</li>
-<li>- Bluetooth  Dual-mode classic และ BLE</li>
-<li>- Power 2.2 ถึง 3.6V กินกระแสน้อยที่สุด 2.5 µA (ในสถานะ deep sleep)</li>
-<li>- 32 GPIO</li>
-<ol>
+<li>หน่วยประมวลผล Dual Core Tensilica LX6 ความเร็วสูงสุด 240MHz</li>
+<li>RAM ภายใน 520KB</li>
+<li>WiFi transceiver B/G/N</li>
+<li>Bluetooth  Dual-mode classic และ BLE</li>
+<li>Power 2.2 ถึง 3.6V กินกระแสน้อยที่สุด 2.5 µA (ในสถานะ deep sleep)</li>
+<li>32 GPIO</li>
+<ul>
     <li>10 ช่อง Capacitive Touch</li>
     <li>18 ช่อง Analog-to-Digital converter (ADC)</li>
     <li>3 ช่อง SPI </li>
@@ -26,6 +17,6 @@
     <li>16 ช่อง ของ PWM</li>
     <li>2 ช่อง Digital-to-Analog Converters (DAC)</li>
     <li>2 ช่อง I2S </li>
- </ol>
+ </ul>
  <li>- มี Hardware Accelerated Encryption (AES, SHA2, ECC, RSA-4096)</li>
  </ol>
