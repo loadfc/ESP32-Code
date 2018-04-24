@@ -1,4 +1,3 @@
-#ESP32
 <h4> สำหรับ Spec ของ ESP-WROOM32 ซึ่งเป็นตัวที่ใช้กันในปัจจุบัน มี Spec ดังนี้ </h4>
 
 <ol>
@@ -18,5 +17,5 @@
     <li>2 ช่อง Digital-to-Analog Converters (DAC)</li>
     <li>2 ช่อง I2S </li>
  </ul>
- <li>- มี Hardware Accelerated Encryption (AES, SHA2, ECC, RSA-4096)</li>
+ <li>มี Hardware Accelerated Encryption (AES, SHA2, ECC, RSA-4096)</li>
  </ol>
