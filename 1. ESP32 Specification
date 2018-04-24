@@ -1,17 +1,21 @@
-สำหรับ Spec ของ ESP-WROOM32 ซึ่งเป็นตัวที่ใช้กันในปัจจุบัน มี Spec ดังนี้
+<bold> สำหรับ Spec ของ ESP-WROOM32 ซึ่งเป็นตัวที่ใช้กันในปัจจุบัน มี Spec ดังนี้ </bold>
 
-- หน่วยประมวลผล Dual Core Tensilica LX6 ความเร็วสูงสุด 240MHz
-- RAM ภายใน 520KB
-- WiFi transceiver B/G/N
-- Bluetooth  Dual-mode classic และ BLE
-- Power 2.2 ถึง 3.6V กินกระแสน้อยที่สุด 2.5 µA (ในสถานะ deep sleep)
-- 32 GPIO
-    10 ช่อง Capacitive Touch
-    18 ช่อง Analog-to-Digital converter (ADC)
-    3 ช่อง SPI 
-    3 ช่อง UART 
-    2 ช่อง I2C 
-    16 ช่อง ของ PWM
-    2 ช่อง Digital-to-Analog Converters (DAC)
-    2 ช่อง I2S 
- - มี Hardware Accelerated Encryption (AES, SHA2, ECC, RSA-4096)
+<ol>
+<li>- หน่วยประมวลผล Dual Core Tensilica LX6 ความเร็วสูงสุด 240MHz</li>
+<li>- RAM ภายใน 520KB</li>
+<li>- WiFi transceiver B/G/N</li>
+<li>- Bluetooth  Dual-mode classic และ BLE</li>
+<li>- Power 2.2 ถึง 3.6V กินกระแสน้อยที่สุด 2.5 µA (ในสถานะ deep sleep)</li>
+<li>- 32 GPIO</li>
+<ol>
+    <li>10 ช่อง Capacitive Touch</li>
+    <li>18 ช่อง Analog-to-Digital converter (ADC)</li>
+    <li>3 ช่อง SPI </li>
+    <li>3 ช่อง UART </li>
+    <li>2 ช่อง I2C </li>
+    <li>16 ช่อง ของ PWM</li>
+    <li>2 ช่อง Digital-to-Analog Converters (DAC)</li>
+    <li>2 ช่อง I2S </li>
+ </ol>
+ <li>- มี Hardware Accelerated Encryption (AES, SHA2, ECC, RSA-4096)</li>
+ </ol>
