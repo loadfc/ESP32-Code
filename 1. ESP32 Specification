@@ -19,3 +19,8 @@
  </ul>
  <li>มี Hardware Accelerated Encryption (AES, SHA2, ECC, RSA-4096)</li>
  </ol>
+ 
+ 
+ <h4> สำหรับ Dev. Board ที่ใช้คือ ESP32 ของ DOIT มี PinOut ดังนี้ </h4>
+ 
+<img src="https://raw.githubusercontent.com/playelek/pinout-doit-32devkitv1/master/pinoutDOIT32devkitv1.png" alt="DOIT Pinout">
