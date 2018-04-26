@@ -41,6 +41,12 @@
 
 <hr>
 
+เมื่อเป็น ESP32 ก็ต้องทดสอบกับ DHT22 ซะหน่อย เพราะน่าจะเป็น Input หลักตัวหนึ่ง โดย Code ก็อยู่ใน Link ด้านล่างนี้
+
+https://github.com/khthana/ESP32-Code/blob/master/dht22.ino
+
+<hr>
+
 
 
 
