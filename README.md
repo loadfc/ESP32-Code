@@ -70,8 +70,29 @@ https://github.com/khthana/ESP32-Code/blob/master/ADC.cpp
 
 <hr>
 
-<h4>PWM : </h4>
+<h4>PWM : </h4>ใน ESP32 จะต่างจาก Arduino หรือ ESP8266 เพราะไม่มีคำสั่ง AnalogWrite ให้ใช้ แต่จะใช้ไลบรารีชื่อ LEDC โดยมีรูปแบบคำสั่งดังนี้
 
+void ledcSetup(byte channel, double freq, byte resolution_bits);
+
+channel คือ หมายเลขของ Timer ที่อยู่ภายใน ESP32 โดยมีตั้งแต่ 0-15 
+freq คือ ความถี่ที่จะให้ Timer สร้างให้ โดยใช้เป็นความถี่ฐาน 
+resolution_bits คือ ค่าความละเอียด ใช้ได้ตั้งแต่ 0-15 (บิต) หากจะใช้เท่ากับ Arduino ก็ใช้ 8 บิต ซึ่งจะต้องสัมพันธ์กับคำสั่ง ledcWrite ด้วย เช่น จากโปรแกรมจะใช้ 13 บิต ดังนั้นในคำสั่ง ledcWrite จะใช้ค่าสูงสุด 8096 โดยค่านี้จะเป็นความละเอียดของ Duty Cycle ที่สามารถใช้ได้ 
+
+อีกฟังก์ชันที่ใช้ คือ 
+ 
+void ledcAttachPin(int pin, byte channel);
+
+จะใช้ในการเชื่อมขาของ ESP32 เข้ากับ Timer (แปลว่าจะใช้ขาอะไรก็ได้) นอกจากนั้น Timer 1 ตัวจะเชื่อมกับหลายขาก็ได้ด้วย 
+
+ฟังก์ชันสุดท้าย คือ 
+
+void ledcWrite(byte channel, int duty);
+
+จะใช้ในการสั่งคลื่นให้ออกทางขา โดยสามารถกำหนด Duty Cycle ได้ (ต้องสัมพันธ์กับ resolution) 
+
+https://github.com/khthana/ESP32-Code/blob/master/PWM.cpp
+
+โปรแกรมจาก maxpromer
 <hr>
 
 เมื่อเป็น ESP32 ก็ต้องทดสอบกับ DHT22 ซะหน่อย เพราะน่าจะเป็น Input หลักตัวหนึ่ง โดย Code ก็อยู่ใน Link ด้านล่างนี้
