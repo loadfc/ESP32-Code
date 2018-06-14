@@ -49,11 +49,13 @@ https://github.com/khthana/ESP32-Code/blob/master/Blink.cpp
 สำหรับการต่อวงจร ผมจะต่อเข้ากับขา 12 ของบอร์ด โดยต่อแบบ Pull Down คือ ปกติจะอ่านได้ Low แต่กดเมื่อไรจะอ่านได้ High <br><br>
 โปรแกรมก็จะมีดังนี้ 
 
+
 https://github.com/khthana/ESP32-Code/blob/master/SwitchInput.cpp
 
 <hr>
 
 <h4>Interrupt : </h4>ต่อไปก็จะเป็นการ Attach Interrupt โดยใช้ Hardware เดิม คือ ต่อ Switch เข้าที่ขา 12 ของบอร์ด โดยแทนที่จะต้องมาวนลูปอ่าน Switch ก็ใช้ Interrupt แทน
+
 
 https://github.com/khthana/ESP32-Code/blob/master/AttachInterrupt.cpp
 
@@ -71,6 +73,7 @@ https://github.com/khthana/ESP32-Code/blob/master/ADC.cpp
 <hr>
 
 <h4>PWM : </h4>ใน ESP32 จะต่างจาก Arduino หรือ ESP8266 เพราะไม่มีคำสั่ง AnalogWrite ให้ใช้ แต่จะใช้ไลบรารีชื่อ LEDC โดยมีรูปแบบคำสั่งดังนี้
+
 
 void ledcSetup(byte channel, double freq, byte resolution_bits);
 
