@@ -66,7 +66,11 @@ https://github.com/khthana/ESP32-Code/blob/master/AttachInterrupt.cpp
 
 สำหรับโปรแกรมนี้ก็จะใช้ GPIO34
 
+https://github.com/khthana/ESP32-Code/blob/master/ADC.cpp
 
+<hr>
+
+PWM
 
 <hr>
 
