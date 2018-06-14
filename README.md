@@ -55,6 +55,8 @@ https://github.com/khthana/ESP32-Code/blob/master/SwitchInput.cpp
 
 ต่อไปก็จะเป็นการ Attach Interrupt โดยใช้ Hardware เดิม คือ ต่อ Switch เข้าที่ขา 12 ของบอร์ด โดยแทนที่จะต้องมาวนลูปอ่าน Switch ก็ใช้ Interrupt แทน
 
+https://github.com/khthana/ESP32-Code/blob/master/AttachInterrupt.cpp
+
 <hr>
 
 เมื่อเป็น ESP32 ก็ต้องทดสอบกับ DHT22 ซะหน่อย เพราะน่าจะเป็น Input หลักตัวหนึ่ง โดย Code ก็อยู่ใน Link ด้านล่างนี้
