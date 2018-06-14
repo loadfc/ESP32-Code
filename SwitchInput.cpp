@@ -1,12 +1,11 @@
 #include <Arduino.h>
 
-#define D8 10
-#define button D8 // switch input Active Low
-#define pressed LOW
+#define button 12 // switch input Active Low
+#define pressed HIGH
 
 void setup()
 {
-    Serial.begin(9600);
+    Serial.begin(115200);
     pinMode(button,INPUT_PULLUP);
 }
 
