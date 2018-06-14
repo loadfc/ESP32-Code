@@ -59,6 +59,17 @@ https://github.com/khthana/ESP32-Code/blob/master/AttachInterrupt.cpp
 
 <hr>
 
+ความสามารถที่ Upgrade มาจาก ESP8266 มาก ก็คือ Analog to Digital Converter หรือ ADC โดยมีมาให้ถึง 8 Channel 
+โดยจะอยู่ที่ขา ดังนี้ channel 0 = GPIO36, channel 1 = GPIO37, channel 2 = GPIO38, channel 3 = GPIO39, channel 4 = GPIO32, channel 5 = GPIO33, channel 6 = GPIO34, channel 7 = GPIO35
+
+และความละเอียดก็มากขึ้นด้วย โดยมีให้ถึง 0-4096 ระดับ 
+
+สำหรับโปรแกรมนี้ก็จะใช้ GPIO34
+
+
+
+<hr>
+
 เมื่อเป็น ESP32 ก็ต้องทดสอบกับ DHT22 ซะหน่อย เพราะน่าจะเป็น Input หลักตัวหนึ่ง โดย Code ก็อยู่ใน Link ด้านล่างนี้
 
 https://github.com/khthana/ESP32-Code/blob/master/dht22.ino
