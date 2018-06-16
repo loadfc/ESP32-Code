@@ -117,10 +117,11 @@ https://github.com/khthana/ESP32-Code/blob/master/DAC_Advance.cpp
 
 
 <hr>
+<h4>DHT22 : </h4>
 
-เมื่อเป็น ESP32 ก็ต้องทดสอบกับ DHT22 ซะหน่อย เพราะน่าจะเป็น Input หลักตัวหนึ่ง โดย Code ก็อยู่ใน Link ด้านล่างนี้
+เป็นเซ็นเซอร์สำหรับตรวจวัดอุณหภูมิและความชื้นยอดนิยม เรียกได้ว่าถ้ามีสอนเกี่ยวกับ IoT ต้องมี DHT22 มาเลย ในโปรแกรมนี้จะต่อที่ขา 12 
 
-https://github.com/khthana/ESP32-Code/blob/master/dht22.ino
+https://github.com/khthana/ESP32-Code/blob/master/dht22.cpp
 
 <hr>
 
