@@ -121,9 +121,14 @@ https://github.com/khthana/ESP32-Code/blob/master/DAC_Advance.cpp
 
 เป็นเซ็นเซอร์สำหรับตรวจวัดอุณหภูมิและความชื้นยอดนิยม เรียกได้ว่าถ้ามีสอนเกี่ยวกับ IoT ต้องมี DHT22 มาเลย ในโปรแกรมนี้จะต่อที่ขา 12 
 
-https://github.com/khthana/ESP32-Code/blob/master/dht22.cpp
+https://github.com/khthana/ESP32-Code/blob/master/DHT22.cpp
 
 <hr>
+<h4>OLED : </h4>
+เป็นจอแสดงผลขนาดเล็ก โดยมีความละเอียด 128x64 การติดต่อจะใช้ I2C สามารถแสดงผลได้ทั้ง Text และ กราฟิก 
+
+<hr>
+
 
 
 
