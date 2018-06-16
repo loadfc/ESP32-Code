@@ -99,9 +99,21 @@ https://github.com/khthana/ESP32-Code/blob/master/PWM.cpp
 <h4>Tone : </h4>
 เนื่องจากไลบรารีของ ESP32 ไม่มีฟังก์ชัน tone (อีกแล้วครับท่าน) ดังนั้นจึงต้องนำ PWM มาใช้ด้วย โดยในการนี้เราจะ Fix Duty Cycle และเปลี่ยนเฉพาะความถี่ โดยเขาว่ากันว่า Duty Cycle ที่เหมาะสมคือ 5% โดยเขาทำเป็นฟังก์ชัน ledcWriteTone(channel, freq); มาให้ โดยตัวอย่างโปรแกรมมีดังนี้
 
+
+https://github.com/khthana/ESP32-Code/blob/master/Tone.cpp
+
+
 <hr>
+<h4>DAC : </h4>
 
+DAC (Digital to Analog Converter) หรือความสามารถในการสร้างสัญญาณ Analog เป็นความสามารถใหม่ที่มีใน ESP32 โดยไม่มีใน Arduino และ ESP8266 ซึ่งจริงๆ แล้ว DAC มีประโยชน์หลายอย่าง เช่น สามารถนำไปใช้ในการสร้างเสียงที่คล้ายกับเสียงจริงได้ หรือ เอาไปสร้าง Function Generator ได้ หรืออื่นๆ อีกมากมาย <br>
 
+DAC ใน ESP32 ได้ให้มา 2 ช่อง หรือ 2 ขา คือ ขา GPIO25 และ GPIO26 โดยมีระดับสัญญาณ 8 บิต ดังนั้นสัญญาณที่สร้างขึ้นก็อาจจะไม่ smooth มากนัก แต่ข้อจำกัดคือ กระแสอาจไม่มากนัก 
+
+โปรแกรมตัวอย่างเป็นโปรแกรม Function Generator คือ โปรแกรมทสำหรับสร้างรูปคลื่น โดยเป็นโปรแกรมสำหรับสร้าง sine wave โดยถ้าต้องการรูปคลื่นแบบอื่น ก็สามารถเปลี่ยนได้โดยเอา code จาก comment มาเปลี่ยนแทน โดยตัวอย่างโปรแกรมมีดังนี้
+
+https://github.com/khthana/ESP32-Code/blob/master/DAC_Simple.cpp
+https://github.com/khthana/ESP32-Code/blob/master/DAC_Advance.cpp
 
 
 <hr>
