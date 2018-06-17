@@ -142,11 +142,21 @@ https://github.com/khthana/ESP32-Code/blob/master/OLED_Graphic2.cpp
 
 <hr>
 <h4>TCP Client : </h4>
-การเชื่อมต่อผ่านเครือข่าย ถือเป็นจุดขายที่สำคัญ (ตั้งแต่ ESP8266 ผู้พี่แล้ว) ซึ่งทำให้บอร์ดเล็ก สามารถทำตัวเป็น Client ของ WiFi ได้ โดยโปรแกรมนี้จะแสดงการเชื่อมต่อกับ TCP Server ต่างๆ (จะเป็นอะไรก็ได้) โดยในโปรแกรมนี้เราจะใช้โปรแกรม Hercules ช่วยในการทำงานเป็น Server <br>
+การเชื่อมต่อผ่านเครือข่าย ถือเป็นจุดขายที่สำคัญ (ตั้งแต่ ESP8266 ผู้พี่แล้ว) ซึ่งทำให้บอร์ดเล็ก สามารถทำตัวเป็น Client ของ WiFi ได้ โดยโปรแกรมนี้จะแสดงการเชื่อมต่อกับ TCP Server ต่างๆ (จะเป็นอะไรก็ได้) โดยในโปรแกรมนี้เราจะใช้โปรแกรม Hercules ช่วยในการทำงานเป็น Server โดยโปรแกรมนี้จะ Connect WiFi จากนั้นจะติดต่อกับ Server พร้อมกับส่งคำว่า Hello ไปเรื่อย แต่ถ้า Server ส่งอะไรมา ก็นำมาแสดงที่ Serial Monitor<br><br>
 
-โปรแกรมนี้จะมีการแสดงผลผ่าน OLED ซึ่งไม่ใช้ก็ได้ (ให้ Comment ออก) 
+โปรแกรมนี้จะมีการแสดงผลผ่าน OLED ซึ่งไม่ใช้ก็ได้ (ให้ Comment ออก) <br><br>
 
+https://github.com/khthana/ESP32-Code/blob/master/WiFi_Client.cpp
 
+<hr>
+<h4>TCP Server : </h4>
+โปรแกรมนี้จะให้ ESP32 ทำตัวเป็น Server แต่โปรแกรมจะยาวนิดหน่อย โดยจะมีส่วนที่แสดง IP, Subnet Mark, Gateway นอกจากนั้นยังมีส่วนที่แสดง Channel ที่ Connect, ความแรงของสัญญาณ (RSSI), DNS Lookup, การสแกนหา Access Point ที่มองเห็นและความแรงในแต่ละ Access Point จากนั้นจะเข้าสู่การเป็น Server โดยจะรอรับ Connection <br> 
+
+โปรแกรมนี้ จะรอรับ Connection ได้ 2 IP <br> 
+
+https://github.com/khthana/ESP32-Code/blob/master/WiFi_Server.cpp
+
+<hr>
 
 
 
