@@ -127,6 +127,18 @@ https://github.com/khthana/ESP32-Code/blob/master/DHT22.cpp
 <h4>OLED : </h4>
 เป็นจอแสดงผลขนาดเล็ก โดยมีความละเอียด 128x64 การติดต่อจะใช้ I2C สามารถแสดงผลได้ทั้ง Text และ กราฟิก 
 
+โปรแกรมตัวอย่างจะมีทั้งหมด 4 โปรแกรม <br>
+โปรแกรมแรกจะเป็นโปรแกรมง่ายๆ แสดงข้อความอย่างเดียว (ปล. ต้องไปแก้ไฟล์ Include โดยแก้ความละเอียดเป็น 128x64) <br><br>
+
+https://github.com/khthana/ESP32-Code/blob/master/OLED_text.cpp
+
+โปรแกรมที่ 2 เป็นโปรแกรมแสดงกราฟิกแบบง่ายๆ คือวาด สี่เหลี่ยม วงกลม <br><br>
+
+https://github.com/khthana/ESP32-Code/blob/master/OLED_Graphic.cpp
+
+สำหรับโปรแกรมที่ 3 เป็นโปรแกรม demo ของ OLED มีความซับซ้อนพอสมควร แสดงทุกฟังก์ชันที่สามารถทำได้ <br><br>
+
+https://github.com/khthana/ESP32-Code/blob/master/OLED_Graphic2.cpp
 <hr>
 
 
