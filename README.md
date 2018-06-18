@@ -150,11 +150,20 @@ https://github.com/khthana/ESP32-Code/blob/master/WiFi_Client.cpp
 
 <hr>
 <h4>TCP Server : </h4>
-โปรแกรมนี้จะให้ ESP32 ทำตัวเป็น Server แต่โปรแกรมจะยาวนิดหน่อย โดยจะมีส่วนที่แสดง IP, Subnet Mark, Gateway นอกจากนั้นยังมีส่วนที่แสดง Channel ที่ Connect, ความแรงของสัญญาณ (RSSI), DNS Lookup, การสแกนหา Access Point ที่มองเห็นและความแรงในแต่ละ Access Point จากนั้นจะเข้าสู่การเป็น Server โดยจะรอรับ Connection <br> 
+โปรแกรมนี้จะให้ ESP32 ทำตัวเป็น TCP Server แต่โปรแกรมจะยาวนิดหน่อย โดยจะมีส่วนที่แสดง IP, Subnet Mark, Gateway นอกจากนั้นยังมีส่วนที่แสดง Channel ที่ Connect, ความแรงของสัญญาณ (RSSI), DNS Lookup, การสแกนหา Access Point ที่มองเห็นและความแรงในแต่ละ Access Point จากนั้นจะเข้าสู่การเป็น Server โดยจะรอรับ Connection <br> 
 
 โปรแกรมนี้ จะรอรับ Connection ได้ 2 IP <br> 
 
 https://github.com/khthana/ESP32-Code/blob/master/WiFi_Server.cpp
+
+<hr>
+<h4>WiFi AP Mode : </h4>
+
+นอกจาก ESP32 จะทำงานในโหมด Station คือ Connect กับ Access Point อื่นๆ แล้ว ยังสามารถทำงานในโหมด AP คือทำตัวเป็น Access Point เพื่อให้ Client มาเกาะ โดยจะมี 2 โปรแกรม คือ ส่วนที่เป็น Server และส่วนที่เป็น Client โดยค่า IP ของ AP ที่เป็น Default คือ 192.168.4.1 
+
+https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Server.cpp<br>
+
+https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Client.cpp
 
 <hr>
 
