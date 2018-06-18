@@ -166,6 +166,9 @@ https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Server.cpp<br>
 https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Client.cpp
 
 <hr>
+<h4>Send E-Mail : </h4>
+ในบางงานที่เป็น IoT เราอาจต้องการให้ ESP32 ส่ง E-Mail เช่น ส่งค่าอุณหภูมิไปบอก โปรแกรมนี้จะเป็นตัวอย่างในการส่ง E-Mail 
+
 
 
 
