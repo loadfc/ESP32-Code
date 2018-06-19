@@ -171,6 +171,10 @@ https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Client.cpp
 
 ก่อนอื่นก็ไปสมัคร โดยเข้าไปที่เว็บ https://thingspeak.com/ สร้าง Account เสร็จแล้วล็อกอิน จากนั้นเลือก New Channel โดยในโปรแกรมเราจะต่อกับ DHT22 ดังนั้นก็ให้สร้าง Channel สำหรับเก็บค่าอุณหภูมิ 
 
+<img src="https://github.com/khthana/ESP32-Code/blob/master/Thinkspeak.jpg" alt="Thinkspeak"
+
+
+
 
 
 
