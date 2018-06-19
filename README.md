@@ -49,7 +49,9 @@ https://github.com/khthana/ESP32-Code/blob/master/Blink.cpp
 สำหรับการต่อวงจร ผมจะต่อเข้ากับขา 12 ของบอร์ด โดยต่อแบบ Pull Down คือ ปกติจะอ่านได้ Low แต่กดเมื่อไรจะอ่านได้ High <br><br>
 
 สำหรับการต่อ Switch ก็จะคล้ายๆ ในรูป (ในรูปเป็นบอร์ดคนละรุ่น แต่ใช้ขาเดียวกัน)<br>
+
 <img src="https://github.com/khthana/ESP32-Code/blob/master/switch.png" alt="Switch"><br>
+
 โปรแกรมก็จะมีดังนี้ <br>
 
 https://github.com/khthana/ESP32-Code/blob/master/SwitchInput.cpp
