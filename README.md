@@ -136,6 +136,9 @@ https://github.com/khthana/ESP32-Code/blob/master/DHT22.cpp
 <hr>
 <h4>OLED : </h4>
 เป็นจอแสดงผลขนาดเล็ก โดยมีความละเอียด 128x64 การติดต่อจะใช้ I2C สามารถแสดงผลได้ทั้ง Text และ กราฟิก 
+<br><br>
+
+<img src="https://github.com/khthana/ESP32-Code/blob/master/OLED.png" alt="OLED"><br>
 
 โปรแกรมตัวอย่างจะมีทั้งหมด 3 โปรแกรม <br>
 โปรแกรมแรกจะเป็นโปรแกรมง่ายๆ แสดงข้อความอย่างเดียว (ปล. ต้องไปแก้ไฟล์ Include โดยแก้ความละเอียดเป็น 128x64) <br>
@@ -180,7 +183,7 @@ https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Client.cpp
 ถ้าจะไปทาง IoT ส่วนใหญ่น่าจะมีสักครั้งที่ลองกับ Thinkspeak ทั้งนี้เพราะมันง่าย Thinkspeak เป็นบริการ IoT คลาวด์ในแบบ Paas (Platform as a Services) โดยมีความสามารถเก็บข้อมูลแบบ Real-time แสดงข้อมูลเป็นกราฟได้ สามารถส่งข้อมูลและเรียกดูจากที่ใดก็ได้ในโลก แล้วยังสามารถดึงข้อมูลไปแสดงที่เว็บของเราได้ด้วย โดยมีบริการทั้งแบบฟรี และ เสียเงิน
 
 ก่อนอื่นก็ไปสมัคร โดยเข้าไปที่เว็บ https://thingspeak.com/ สร้าง Account เสร็จแล้วล็อกอิน จากนั้นเลือก New Channel โดยในโปรแกรมเราจะต่อกับ DHT22 ดังนั้นก็ให้สร้าง Channel สำหรับเก็บค่าอุณหภูมิ 
-<br>
+<br><br>
 <img src="https://github.com/khthana/ESP32-Code/blob/master/Thinkspeak.jpg" alt="Thinkspeak">
 <br>
 จากนั้นให้ไปที่ API Keys
