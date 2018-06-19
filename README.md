@@ -166,8 +166,10 @@ https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Server.cpp<br>
 https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Client.cpp
 
 <hr>
-<h4>Send E-Mail : </h4>
-ในบางงานที่เป็น IoT เราอาจต้องการให้ ESP32 ส่ง E-Mail เช่น ส่งค่าอุณหภูมิไปบอก โปรแกรมนี้จะเป็นตัวอย่างในการส่ง E-Mail 
+<h4>Thinkspeak : </h4>
+ถ้าจะไปทาง IoT ส่วนใหญ่น่าจะมีสักครั้งที่ลองกับ Thinkspeak ทั้งนี้เพราะมันง่าย Thinkspeak เป็นบริการ IoT คลาวด์ในแบบ Paas (Platform as a Services) โดยมีความสามารถเก็บข้อมูลแบบ Real-time แสดงข้อมูลเป็นกราฟได้ สามารถส่งข้อมูลและเรียกดูจากที่ใดก็ได้ในโลก แล้วยังสามารถดึงข้อมูลไปแสดงที่เว็บของเราได้ด้วย โดยมีบริการทั้งแบบฟรี และ เสียเงิน
+
+ก่อนอื่นก็ไปสมัคร โดยเข้าไปที่เว็บ https://thingspeak.com/ สร้าง Account เสร็จแล้วล็อกอิน จากนั้นเลือก New Channel โดยในโปรแกรมเราจะต่อกับ DHT22 ดังนั้นก็ให้สร้าง Channel สำหรับเก็บค่าอุณหภูมิ 
 
 
 
