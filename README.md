@@ -54,7 +54,11 @@ https://github.com/khthana/ESP32-Code/blob/master/SwitchInput.cpp
 
 <hr>
 
-<h4>Interrupt : </h4>ต่อไปก็จะเป็นการ Attach Interrupt โดยใช้ Hardware เดิม คือ ต่อ Switch เข้าที่ขา 12 ของบอร์ด โดยแทนที่จะต้องมาวนลูปอ่าน Switch ก็ใช้ Interrupt แทน <br><br>
+<h4>Interrupt : </h4>ต่อไปก็จะเป็นการ Attach Interrupt โดยใช้ Hardware เดิม คือ ต่อ Switch เข้าที่ขา 12 ของบอร์ด โดยแทนที่จะต้องมาวนลูปอ่าน Switch ก็ใช้ Interrupt แทน <br>
+
+สำหรับการต่อ Switch ก็จะคล้ายๆ ในรูป (ในรูปเป็นบอร์ดคนละรุ่น แต่ใช้ขาเดียวกัน)<br>
+<img src="https://github.com/khthana/ESP32-Code/blob/master/Switch.png" alt="Switch">
+<br> 
 
 
 https://github.com/khthana/ESP32-Code/blob/master/AttachInterrupt.cpp
@@ -170,8 +174,10 @@ https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Client.cpp
 ถ้าจะไปทาง IoT ส่วนใหญ่น่าจะมีสักครั้งที่ลองกับ Thinkspeak ทั้งนี้เพราะมันง่าย Thinkspeak เป็นบริการ IoT คลาวด์ในแบบ Paas (Platform as a Services) โดยมีความสามารถเก็บข้อมูลแบบ Real-time แสดงข้อมูลเป็นกราฟได้ สามารถส่งข้อมูลและเรียกดูจากที่ใดก็ได้ในโลก แล้วยังสามารถดึงข้อมูลไปแสดงที่เว็บของเราได้ด้วย โดยมีบริการทั้งแบบฟรี และ เสียเงิน
 
 ก่อนอื่นก็ไปสมัคร โดยเข้าไปที่เว็บ https://thingspeak.com/ สร้าง Account เสร็จแล้วล็อกอิน จากนั้นเลือก New Channel โดยในโปรแกรมเราจะต่อกับ DHT22 ดังนั้นก็ให้สร้าง Channel สำหรับเก็บค่าอุณหภูมิ 
-
+<br>
 <img src="https://github.com/khthana/ESP32-Code/blob/master/Thinkspeak.jpg" alt="Thinkspeak">
+<br>
+จากนั้นให้ไปที่ API Keys
 
 
 
