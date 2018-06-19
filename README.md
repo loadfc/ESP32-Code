@@ -47,10 +47,10 @@ https://github.com/khthana/ESP32-Code/blob/master/Blink.cpp
 
 <h4>Digital Input : </h4>หลังจากทำไฟกระพริบกันแล้ว ส่วนต่อมาที่มักทำกัน คือ Input เนื่องจากหลายครั้งที่ต้องการการกดปุ่ม <br>
 สำหรับการต่อวงจร ผมจะต่อเข้ากับขา 12 ของบอร์ด โดยต่อแบบ Pull Down คือ ปกติจะอ่านได้ Low แต่กดเมื่อไรจะอ่านได้ High <br><br>
-โปรแกรมก็จะมีดังนี้ <br>
+
 สำหรับการต่อ Switch ก็จะคล้ายๆ ในรูป (ในรูปเป็นบอร์ดคนละรุ่น แต่ใช้ขาเดียวกัน)<br>
 <img src="https://github.com/khthana/ESP32-Code/blob/master/switch.png" alt="Switch"><br>
-
+โปรแกรมก็จะมีดังนี้ <br>
 
 https://github.com/khthana/ESP32-Code/blob/master/SwitchInput.cpp
 
