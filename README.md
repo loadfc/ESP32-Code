@@ -99,6 +99,8 @@ void ledcWrite(byte channel, int duty);
 
 จะใช้ในการสั่งคลื่นให้ออกทางขา โดยสามารถกำหนด Duty Cycle ได้ (ต้องสัมพันธ์กับ resolution) 
 
+<img src="https://github.com/khthana/ESP32-Code/blob/master/ADC.png" alt="ADC"><br>
+
 https://github.com/khthana/ESP32-Code/blob/master/PWM.cpp
 
 <hr>
@@ -126,6 +128,8 @@ https://github.com/khthana/ESP32-Code/blob/master/DAC_Advance.cpp
 <h4>DHT22 : </h4>
 
 เป็นเซ็นเซอร์สำหรับตรวจวัดอุณหภูมิและความชื้นยอดนิยม เรียกได้ว่าถ้ามีสอนเกี่ยวกับ IoT ต้องมี DHT22 มาเลย ในโปรแกรมนี้จะต่อที่ขา 12 
+
+<img src="https://github.com/khthana/ESP32-Code/blob/master/DHT22.png" alt="DHT22"><br>
 
 https://github.com/khthana/ESP32-Code/blob/master/DHT22.cpp
 
