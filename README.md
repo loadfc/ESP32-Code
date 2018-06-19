@@ -97,7 +97,7 @@ void ledcAttachPin(int pin, byte channel);
 
 void ledcWrite(byte channel, int duty);
 
-จะใช้ในการสั่งคลื่นให้ออกทางขา โดยสามารถกำหนด Duty Cycle ได้ (ต้องสัมพันธ์กับ resolution) 
+จะใช้ในการสั่งคลื่นให้ออกทางขา โดยสามารถกำหนด Duty Cycle ได้ (ต้องสัมพันธ์กับ resolution) <br>
 
 <img src="https://github.com/khthana/ESP32-Code/blob/master/ADC.png" alt="ADC"><br>
 
