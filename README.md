@@ -48,7 +48,7 @@ https://github.com/khthana/ESP32-Code/blob/master/Blink.cpp
 <h4>Digital Input : </h4>หลังจากทำไฟกระพริบกันแล้ว ส่วนต่อมาที่มักทำกัน คือ Input เนื่องจากหลายครั้งที่ต้องการการกดปุ่ม <br>
 สำหรับการต่อวงจร ผมจะต่อเข้ากับขา 12 ของบอร์ด โดยต่อแบบ Pull Down คือ ปกติจะอ่านได้ Low แต่กดเมื่อไรจะอ่านได้ High <br><br>
 
-สำหรับการต่อ Switch ก็จะคล้ายๆ ในรูป (ในรูปเป็นบอร์ดคนละรุ่น แต่ใช้ขาเดียวกัน)<br>
+สำหรับการต่อ Switch ก็จะคล้ายๆ ในรูป (ในรูปเป็นบอร์ดคนละรุ่น แต่ใช้ขาเดียวกัน)<br><br>
 
 <img src="https://github.com/khthana/ESP32-Code/blob/master/switch.png" alt="Switch"><br>
 
@@ -70,7 +70,7 @@ https://github.com/khthana/ESP32-Code/blob/master/AttachInterrupt.cpp
 <h4>Analog Input : </h4> ความสามารถที่ Upgrade มาจาก ESP8266 มาก ก็คือ Analog to Digital Converter หรือ ADC โดยมีมาให้ถึง 8 Channel 
 โดยจะอยู่ที่ขา ดังนี้ channel 0 = GPIO36, channel 1 = GPIO37, channel 2 = GPIO38, channel 3 = GPIO39, channel 4 = GPIO32, channel 5 = GPIO33, channel 6 = GPIO34, channel 7 = GPIO35
 
-และความละเอียดก็มากขึ้นด้วย โดยมีให้ถึง 0-4096 ระดับ <br>
+และความละเอียดก็มากขึ้นด้วย โดยมีให้ถึง 0-4096 ระดับ <br><br>
 
 <img src="https://github.com/khthana/ESP32-Code/blob/master/ADC.png" alt="ADC"><br>
 
