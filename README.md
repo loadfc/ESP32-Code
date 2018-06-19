@@ -70,7 +70,9 @@ https://github.com/khthana/ESP32-Code/blob/master/AttachInterrupt.cpp
 <h4>Analog Input : </h4> ความสามารถที่ Upgrade มาจาก ESP8266 มาก ก็คือ Analog to Digital Converter หรือ ADC โดยมีมาให้ถึง 8 Channel 
 โดยจะอยู่ที่ขา ดังนี้ channel 0 = GPIO36, channel 1 = GPIO37, channel 2 = GPIO38, channel 3 = GPIO39, channel 4 = GPIO32, channel 5 = GPIO33, channel 6 = GPIO34, channel 7 = GPIO35
 
-และความละเอียดก็มากขึ้นด้วย โดยมีให้ถึง 0-4096 ระดับ 
+และความละเอียดก็มากขึ้นด้วย โดยมีให้ถึง 0-4096 ระดับ <br>
+
+<img src="https://github.com/khthana/ESP32-Code/blob/master/ADC.png" alt="ADC"><br>
 
 สำหรับโปรแกรมนี้ก็จะใช้ GPIO34
 
@@ -98,8 +100,6 @@ void ledcAttachPin(int pin, byte channel);
 void ledcWrite(byte channel, int duty);
 
 จะใช้ในการสั่งคลื่นให้ออกทางขา โดยสามารถกำหนด Duty Cycle ได้ (ต้องสัมพันธ์กับ resolution) <br>
-
-<img src="https://github.com/khthana/ESP32-Code/blob/master/ADC.png" alt="ADC"><br>
 
 https://github.com/khthana/ESP32-Code/blob/master/PWM.cpp
 
