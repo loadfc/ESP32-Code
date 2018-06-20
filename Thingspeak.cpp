@@ -6,12 +6,12 @@ const char* ssid = "ssid";
 const char* pass = "password";
 
 #define DHTPIN 17 // กำหนดขา Data เพื่อรับข้อมูลจาก DHT22
-#define DHTTYPE DHT22 // ใส่รุ่นให้ตรง
-DHT dht(DHTPIN, DHTTYPE); // เรียกคลาส
+#define DHTTYPE DHT22 
+DHT dht(DHTPIN, DHTTYPE); 
 
 // ThingSpeak Settings //
 char thingSpeakAddress[] = "api.thingspeak.com";
-String writeAPIKey = "Write API Key"; // ไปเอาคีย์จากเมนู key Api เอาแบบ write มานะครับ
+String writeAPIKey = "Write API Key"; 
 WiFiClient client;
 
 void setup() {
@@ -30,10 +30,10 @@ void setup() {
 void loop () {
   float h = dht.readHumidity();
   float t = dht.readTemperature();
-  String temp = (String) t; // แปลงเป็น string ให้หมดนะครับ
-  String hum = (String) h; // แปลงเป็น string ให้หมดนะครับ
+  String temp = (String) t; 
+  String hum = (String) h; 
 
-  String data = "field1=" + temp + "&field2=" + hum; // แปลงเป็น string ให้หมดนะครับเพื่อจะส่งเเล้วนะครับ
+  String data = "field1=" + temp + "&field2=" + hum; 
 
   if (client.connect(thingSpeakAddress, 80)) {
     client.print("POST /update HTTP/1.1\n");
@@ -44,7 +44,7 @@ void loop () {
     client.print("Content-Length: ");
     client.print(data.length());
     client.print("\n\n");
-    client.print(data); // ข้อมูลเรานะครับ
+    client.print(data); 
   }
 
   delay(5000);
