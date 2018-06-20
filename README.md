@@ -186,16 +186,25 @@ https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Client.cpp
 <br><br>
 <img src="https://github.com/khthana/ESP32-Code/blob/master/Thingspeak.jpg" alt="Thingspeak">
 <br>
-จากนั้นให้ไปที่ API Keys แล้ว copy API Key เก็บเอาไว้ ทั้งสองตัว สำหรับโปรแกรมแรก จะเป็นโปรแกรมที่อ่านค่าจาก DHT22 แล้วส่งมาที่ Thingspeak ซึ่งหากจะเอาโปรแกรมไปใช้ ก็ให้เปลี่ยนค่า Write API Key เป็นของตัวเอง และกำหนด ssid/password แล้วก็รัน มันจะส่งข้อมูลทุก 5 วินาที ถ้าจะให้ส่งช้าหรือเร็วกว่านี้ ก็เปลี่ยนที่ delay 
+จากนั้นให้ไปที่ API Keys แล้ว copy API Key เก็บเอาไว้ ทั้งสองตัว สำหรับโปรแกรมนี้จะเป็นโปรแกรมที่อ่านค่าจาก DHT22 แล้วส่งมาที่ Thingspeak ซึ่งหากจะเอาโปรแกรมไปใช้ ก็ให้เปลี่ยนค่า Write API Key เป็นของตัวเอง และกำหนด ssid/password แล้วก็รัน มันจะส่งข้อมูลทุก 5 วินาที ถ้าจะให้ส่งช้าหรือเร็วกว่านี้ ก็เปลี่ยนที่ delay 
 
 เสร็จแล้วก็ไปเช็คที่เว็บ Thingspeak ว่ามีข้อมูลขึ้นหรือไม่ ถ้ามีข้อมูลก็แสดงว่าโปรแกรมทำงานได้ถูกต้อง <br>
 
 https://github.com/khthana/ESP32-Code/blob/master/Thingspeak.cpp
 
-ส่วนโปรแกรมที่ 2 จะเป็นการเรียกใช้ Library ของ Thingspeak 
+<hr>
+<h>Blynk : </h4>
+Blynk เป็น Platform ที่ทำให้เราสามารถเชื่อมต่ออุปกรณ์เช่น Arduino, ESP8266 หรือ ESP32 กับ Mobile App ได้ง่าย โดยไม่ต้องพัฒนาโปรแกรมเอง ส่วนประกอบของ Blynk มี 3 ส่วนได้แก่ 1) Mobile App สำหรับควบคุมและดูข้อมูล 2) Cloud Service สำหรับเก็บข้อมูลจากอุปกรณ์ 3) Library สำหรับเขียนโปรแกรมสำหรับอุปกรณ์เพื่อเชื่อมต่อกับ Blynk
 
+ก่อนอื่นก็ต้องติดตั้งโปรแกรม Blynk แล้วสร้าง Project ตั้งชื่อ แล้วเลือกบอร์ดเป็น ESP32 จากนั้น Blynk จะส่ง Token มาทาง E-Mail แล้วก็ต้องติดตั้ง Library Blynk ใน IDE ด้วยนะครับ 
 
-https://github.com/khthana/ESP32-Code/blob/master/Thingspeak.cpp
+จากนั้นก็โหลดโปรแกรมต่อไปนี้ลงใน ESP32 
+
+https://github.com/khthana/ESP32-Code/blob/master/Blynk.cpp
+
+จากนั้นก็ Config ที่ Blynk ตามใจชอบ หากต้องการทดสอบ ให้สร้าง widget ที่เป็นปุ่มมา 1 ปุุ่ม โดยตั้ง GPIO ให้ตรงกับไฟ LED แล้วกด Play จะพบว่าสามารถกดปุ่มเพื่อปิดเปิด LED บนบอร์ดได้ 
+
+หากจะส่งค่าไปที่โปรแกรมบนมือถือ ให้เพิ่ม Gauge มา 2 อัน โดยกำหนดให้เป็น Input ให้เป็น Virtual 
 
 
 
