@@ -186,7 +186,16 @@ https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Client.cpp
 <br><br>
 <img src="https://github.com/khthana/ESP32-Code/blob/master/Thinkspeak.jpg" alt="Thinkspeak">
 <br>
-จากนั้นให้ไปที่ API Keys
+จากนั้นให้ไปที่ API Keys แล้ว copy API Key เก็บเอาไว้ ทั้งสองตัว สำหรับโปรแกรมแรก จะเป็นโปรแกรมที่อ่านค่าจาก DHT22 แล้วส่งมาที่ Thingspeak ซึ่งหากจะเอาโปรแกรมไปใช้ ก็ให้เปลี่ยนค่า Write API Key เป็นของตัวเอง และกำหนด ssid/password แล้วก็รัน มันจะส่งข้อมูลทุก 5 วินาที ถ้าจะให้ส่งช้าหรือเร็วกว่านี้ ก็เปลี่ยนที่ delay 
+
+เสร็จแล้วก็ไปเช็คที่เว็บ Thingspeak ว่ามีข้อมูลขึ้นหรือไม่ ถ้ามีข้อมูลก็แสดงว่าโปรแกรมทำงานได้ถูกต้อง <br><br>
+
+https://github.com/khthana/ESP32-Code/blob/master/Thingspeak.cpp
+
+ส่วนโปรแกรมที่ 2 จะเป็นการเรียกใช้ Library ของ Thingspeak 
+
+
+
 
 
 
