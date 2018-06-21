@@ -216,7 +216,17 @@ Firebase เป็นฐานข้อมูลออนไลน์ของ g
 
 <img src="https://github.com/khthana/ESP32-Code/blob/master/Firebase1.jpg" alt="Firebase"><br>
 
-ไปที่ Project Setting (รูปเฟือง) 
+ไปที่ Project Setting (รูปเฟือง) ไปต่อที่หน้า Service Accounts แล้วเลือก Database Secrets
+
+<img src="https://github.com/khthana/ESP32-Code/blob/master/Firebase2.jpg" alt="Firebase"><br>
+
+ให้คัดลอกคีย์เอาไว้ ตรงบริเวณที่เป็น จุดจุด ให้กดที่ show ก่อน เพื่อให้ยกเลิกการซ่อน 
+
+เสร็จแล้วให้คลิกที่ Develop -> Database แล้วคลิก Get Started ที่ Realtime Database เลือก Start in Test Mode แล้วกด Enable จะได้หน้าจอนี้ 
+
+<img src="https://github.com/khthana/ESP32-Code/blob/master/Firebase3.jpg" alt="Firebase"><br>
+
+เอาละครับคราวนี้ก็กลับไปที่ ESP32 แล้วติดตั้ง Library ชื่อ 
 
 
 
