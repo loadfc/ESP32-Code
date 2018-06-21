@@ -193,7 +193,7 @@ https://github.com/khthana/ESP32-Code/blob/master/AP_Mode_Client.cpp
 https://github.com/khthana/ESP32-Code/blob/master/Thingspeak.cpp
 
 <hr>
-<h>Blynk : </h4>
+<h4>Blynk : </h4>
 Blynk เป็น Platform ที่ทำให้เราสามารถเชื่อมต่ออุปกรณ์เช่น Arduino, ESP8266 หรือ ESP32 กับ Mobile App ได้ง่าย โดยไม่ต้องพัฒนาโปรแกรมเอง ส่วนประกอบของ Blynk มี 3 ส่วนได้แก่ 1) Mobile App สำหรับควบคุมและดูข้อมูล 2) Cloud Service สำหรับเก็บข้อมูลจากอุปกรณ์ 3) Library สำหรับเขียนโปรแกรมสำหรับอุปกรณ์เพื่อเชื่อมต่อกับ Blynk
 
 ก่อนอื่นก็ต้องติดตั้งโปรแกรม Blynk แล้วสร้าง Project ตั้งชื่อ แล้วเลือกบอร์ดเป็น ESP32 จากนั้น Blynk จะส่ง Token มาทาง E-Mail แล้วก็ต้องติดตั้ง Library Blynk ใน IDE ด้วยนะครับ 
@@ -204,7 +204,25 @@ https://github.com/khthana/ESP32-Code/blob/master/Blynk.cpp
 
 จากนั้นก็ Config ที่ Blynk ตามใจชอบ หากต้องการทดสอบ ให้สร้าง widget ที่เป็นปุ่มมา 1 ปุุ่ม โดยตั้ง GPIO ให้ตรงกับไฟ LED แล้วกด Play จะพบว่าสามารถกดปุ่มเพื่อปิดเปิด LED บนบอร์ดได้ 
 
-หากจะส่งค่าไปที่โปรแกรมบนมือถือ ให้เพิ่ม Gauge มา 2 อัน โดยกำหนดให้เป็น Input ให้เป็น Virtual 
+หากจะส่งค่าไปที่โปรแกรมบนมือถือ ให้เพิ่ม Gauge มา 2 อัน โดยกำหนดให้เป็น Input ให้เป็น Virtual ตั้งชื่อเป็น Temp และ Humidity ก็จะเห็นข้อมูลจาก DHT22 ส่งขึ้นไปแสดงใน Widget 
+
+<hr>
+<h4>Firebase : </h4>
+Firebase เป็นฐานข้อมูลออนไลน์ของ google รูปแบบการใช้งานจะเป็นแบบ NoSQL การเก็บข้อมูลจะเป็น JSON สามารถเขียนโปรแกรมเชื่อมต่อด้วยภาษา Python, PHP, ฯลฯ และสามารถใช้ REST API ในการติดต่อได้ ดังนั้นเราสามารถเขียนโปรแกรมให้ ESP32 ให้ส่งข้อมูลขึ้นไปเก็บบน Firebase เพื่อเอาไปทำอย่างอื่นต่อไป 
+
+ก่อนอื่นให้เข้าไปที่ https://firebase.google.com/ แล้วล็อกอิน
+
+จากนั้นเลือก Add Project ตั้งชื่อ เลือกประเทศ แล้ว Create Project ก็จะเข้ามาที่หน้านี้
+
+<img src="https://github.com/khthana/ESP32-Code/blob/master/Firebase1.jpg" alt="Firebase"><br>
+
+ไปที่ Project Setting (รูปเฟือง) 
+
+
+
+
+
+
 
 
 
